@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+h2{
+    font-size: 5rem;
+    margin-left: 32%;
+    margin-right: auto;
+    color: red;
+    margin-bottom: 20px;
+    margin-top: 20%;
+    animation: animate 1s infinite;
+}
+@keyframes animate{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1; 
+    }
+}
+p{
+    font-size: 2rem;
+    margin-left: 27%;
+    margin-right: auto;
+    color: red;
+}
