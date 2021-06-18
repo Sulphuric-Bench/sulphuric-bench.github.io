@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+}
+img.left,
+img.right {
+  opacity: 0.15;
+  width: 400px;
+  height: 400px;
+  z-index: -1000000000;
+  position: fixed;
+  top: 200px;
+}
+img.left {
+  left: -200px;
+}
+img.right {
+  right: -200px;
+}
+div.socials {
+  position: fixed;
+  right: 0;
+  top: 65%;
+  background: #54defe;
+  width: 50px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  opacity: 0.5;
+  z-index: 1;
+}
+div.socials:hover {
+  opacity: 1;
+}
+div.socials .tooltip {
+  position: relative;
+  display: inline-block;
+}
+div.socials .tooltip .niche {
+  transform: translateY(14px);
+}
+div.socials .tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #182a30;
+  color: #54defe;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 110%;
+}
+div.socials .tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent #182a30;
+}
+div.socials .tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+div.socials a {
+  text-decoration: none;
+}
+div.socials a i {
+  text-align: center;
+  cursor: pointer;
+}
+div.socials a i.fa-facebook {
+  display: block;
+  color: #182a30;
+  font-size: 25px;
+  padding: 10px;
+}
+div.socials a i.fa-twitter {
+  color: #54defe;
+  background: #182a30;
+  border-radius: 50%;
+  margin-left: 12px;
+  font-size: 15px;
+  padding: 6px;
+  margin-bottom: 10px;
+}
+div.socials a i.fa-youtube {
+  background: #182a30;
+  color: #54defe;
+  border-radius: 50%;
+  margin-left: 12px;
+  font-size: 16px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+div.socials a i.fa-instagram {
+  color: #54defe;
+  background: #182a30;
+  border-radius: 50%;
+  margin-left: 12px;
+  font-size: 15px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+section {
+  z-index: 1;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  background: #182a30;
+}
+::-webkit-scrollbar-thumb {
+  background: #54defe;
+  border-radius: 6px;
+}
+@media (max-width: 340px) {
+  img.right {
+    display: none;
+  }
+
+  img.left {
+    display: flex;
+    justify-content: center;
+    left: 0;
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map*/
